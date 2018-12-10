@@ -18,3 +18,12 @@
 	checkout
 13.	stash
 	checkout feature/Ticket220
+17.	apply stash
+	editar bitacora.txt
+18.	add bitacora.txt
+	commit
+19.	checkout develop
+20.	branch feature/Ticket222
+21.	checkout feature/Ticket220
+22.					La fusión se haría por fast-fordward ya que la rama feature/Ticket220 parte del
+					último commit en el que develop se encuentra.
