@@ -11,3 +11,40 @@
 3.	add bitacora.txt
 	commit -m "..."
 	push
+5.	add bitacora.txt
+	commit
+6.	branch develop
+7.	branch feature/Ticket220
+	checkout
+9.	add bitacora.txt
+	commit
+10.	checkout develop
+11.	branch feature/Ticket221
+	checkout feature/Ticket221
+13.	stash
+	checkout feature/Ticket220
+15.	add bitacora.txt
+	commit
+16.	checkout feature/Ticket221
+17.	apply stash
+	editar bitacora.txt
+18.	add bitacora.txt
+	commit
+19.	checkout develop
+20.	branch feature/Ticket222
+21.	checkout feature/Ticket220
+22.					La fusión se haría por fast-fordward ya que la rama feature/Ticket220 parte del
+					último commit en el que develop se encuentra.
+23.	add bitacora.txt
+	commit
+24.	checkout develop
+25.	merge --no-fast-fordward
+26.	merge --no-fast-fordward	Esta fusión resulta en conflictos en el fichero bitacora.txt. Por ello ha sido 
+					necesario editar el fichero para resolver dichos conflictos y realizar un commit de los cambios.
+28.	add bitacora.txt
+	commit
+29.	tag
+30.	push develop			Al realizar el test desde SourceTree, simplemente desactivamos la opción de pushear las tags.
+	push *				Se pushean todas las ramas.
+31.	checkout feature/Ticket222
+32.	git checkout commitID bitacora.txt	Siendo commitID el identificador del último commit en develop.
