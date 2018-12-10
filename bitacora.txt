@@ -16,8 +16,16 @@
 6.	branch develop
 7.	branch feature/Ticket220
 	checkout
+9.	add bitacora.txt
+	commit
+10.	checkout develop
+11.	branch feature/Ticket221
+	checkout feature/Ticket221
 13.	stash
 	checkout feature/Ticket220
+15.	add bitacora.txt
+	commit
+16.	checkout feature/Ticket221
 17.	apply stash
 	editar bitacora.txt
 18.	add bitacora.txt
