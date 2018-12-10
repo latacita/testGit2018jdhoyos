@@ -11,3 +11,8 @@
 3.	add bitacora.txt
 	commit -m "..."
 	push
+5.	add bitacora.txt
+	commit
+6.	branch develop
+7.	branch feature/Ticket220
+	checkout
