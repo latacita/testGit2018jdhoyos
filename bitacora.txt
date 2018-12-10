@@ -48,3 +48,13 @@
 	push *				Se pushean todas las ramas.
 31.	checkout feature/Ticket222
 32.	git checkout commitID bitacora.txt	Siendo commitID el identificador del último commit en develop.
+34.	add bitacora.txt
+	commit
+35.	checkout develop
+	merge --no-fastfordward		Esta fusión resulta en conflictos en el fichero bitacora.txt. Por ello ha sido 
+					necesario editar el fichero para resolver dichos conflictos y realizar un commit de los cambios.
+	add bitacora.txt
+	commit
+36.	checkout master
+	merge --no-fastfordward
+37.	Editar bitacora.txt
